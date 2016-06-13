@@ -1,0 +1,269 @@
+
+.container {
+    width: 920px;
+    margin: 0 auto;
+}
+
+    #encabezado
+    {
+        height: 120px;
+        display: flex;
+        justify-content:  space-between;
+    }
+    
+    #encabezado figure, #titulos *{
+        margin: 0;
+    }
+
+    #titulos h1 { font-size: 1.5em}
+    #titulos h2 { font-size: 1.2em}
+    #titulos h3 { font-size: 0.9em}
+    #titulos h4 { font-size: 0.8em}
+
+    #barra_navegacion {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        background-image: url(../imagenes/fondo_menu.png);
+        background-position: center;
+        align-items: center;
+    }
+h1, h2, h3, h4, h5, h6, figure, p, li, ul{
+    margin: 0;
+    padding: 0;
+    
+    }
+    #barra_navegacion ul ul{
+        display: none;
+        position: relative;
+    }
+    
+    #barra_navegacion>ul>li{
+        display: inline-block;
+        position: relative;
+    }
+
+    #barra_navegacion>ul ul li {
+        display: block;
+        transition: 0.5s;
+    }
+
+    #barra_navegacion a{
+        color: black;
+        padding: 5px 20px;
+        text-decoration: none;
+        display: flex;
+    }
+
+    #barra_navegacion ul 
+    {
+        padding: 0;
+    }
+
+    #barra_navegacion >ul >li >a:hover  >ul {
+        background-color: lightgray;
+        display: flex;
+        flex-direction: column;
+    }
+    #barra_navegacion>ul ul li {
+        background-color: lightcoral;
+    }
+
+    #nota_principal
+    {
+        height: 380px;
+        margin: 20px 0;
+        box-shadow: 0 0 15px darkgray;
+        margin-top: 20px;
+        margin-bottom: 35px;
+    }
+
+    #nota_principal img{
+        border: 10px solid white;
+    }
+
+    #nota_secundaria
+    {
+        width: 700px;
+        float: left;
+        min-height: 300px;
+        display: inline-block;
+    }
+
+    #nota_secundaria notas{
+        margin-top: 20px;
+    }
+
+    #nota_secundaria article {
+        display: flex;
+        background-image: url('../imagenes/separador-nota-secundaria.png');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding-bottom: 40px;
+        margin-bottom: 20px;
+    }
+
+    .sombra{
+        box-shadow: 0 0 9px #bdbdbd;
+    }
+
+    figure{margin: 0;}
+
+    .nota-imagen {
+        position: relative;
+    }
+    
+    .nota-imagen span {
+        position: absolute;
+        top: 10px;
+        left: -6px;
+        padding: 5px 10px;
+        box-shadow: 1px 1px 3px darkgray;
+        background-color: lightgray;
+    }
+    
+    .cuerpo {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    #nota-secundaria article h2 {
+        font-variant: small-caps;
+        line-height: 0.9em;
+        font-size: 1.3em;
+        font-weight: 500;
+    }
+
+    .titulo a {
+        color: #b92025;
+        text-decoration: none;
+    }
+
+    .titulo{
+        margin-bottom: 13px;
+        font-variant:  small-caps;
+        line-height: 0.8em;
+        font-family: "Trajan Pro Regular";
+    }
+
+    .texto {
+        text-align: justify;
+        margin: 10px 0;
+        padding-top: 5px;
+        line-height: 1.2em;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+    }
+
+    .leer-mas {
+        margin-top: 1.6em;
+        background-color: #b92012;
+        display: inline-block;
+        padding: 3px;
+        box-shadow: 0 2px 3px darkgray;
+    }
+
+    .leer-mas div {
+        padding: 2px 20px ! important;
+        border: 1px solid white;
+    }
+
+    .leer-mas p {font-family: "Trajan Pro Regular"; color: white; font-variant: small-caps; }
+
+
+#anuncios
+{
+    width: 210px;
+    padding: 5px;
+    height: 290px;
+    background-color: white;
+}
+
+#anuncios > img {
+    margin: 3px 0;
+}
+
+#pie
+{
+    height: 150px;
+}
+
+figure{
+    margin: 0;
+}
+
+#programas{
+    display: flex;
+    justify-content: space-between;
+}
+
+#politicas{
+    border-bottom: 3px double lightgray;
+    border-top: 3px double lightgray;
+    padding: 5px;
+    text-align: center;
+}
+
+    .separador {
+        padding: 5px 0;
+        margin: 20px 0;
+        position: relative;
+        text-align: center;
+    }
+
+    .separador a: before, .separador a::after{
+        content: "";
+        border-top: 3px double lightgray;
+        width: 38%;
+        position: absolute;
+        top: 35px;
+    }
+
+.separador a::before 
+{
+    left: 0;
+}
+
+.separador a::after
+ {
+    right: 0;
+ }
+
+.text-center
+{
+   text-align: center; 
+}
+
+.flexible
+{
+    display: flex;
+}
+
+.twitter, .facebook
+{
+    text-indent: -9999px;
+    display: inline-block
+    width: 33px;
+    height: 33px;
+}
+
+.twitter
+{
+    background: url(../imagenes/facebook_twitter.png) 0 0;
+}
+
+.facebook
+{
+    background: url(../imagenes/facebook_twitter.png) -43px 0;
+}
+
+.twitter:hover
+{
+        background: url(../imagenes/facebook_twitter.png) -43px -43px;
+}
+
+.facebook:hover
+{
+    background: url(../imagenes/facebook_twitter.png) 0 -43px;
+}
+
